@@ -3,9 +3,7 @@
         "src"
     ],
     "java.project.outputPath": "bin",
-    "java.project.referencedLibraries": {
-        "include": [
-            "c:\\Program Files\\Java\\jdk-21\\lib\\commons-codec-1.15.jar"
-        ],
-    }
+    "java.project.referencedLibraries": [
+        "c:\\Program Files\\Java\\jdk-21\\lib\\commons-codec-1.15\\commons-codec-1.15.jar"
+    ]
 }
