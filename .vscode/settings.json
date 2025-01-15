@@ -4,6 +4,7 @@
     ],
     "java.project.outputPath": "bin",
     "java.project.referencedLibraries": [
-        "c:\\Program Files\\Java\\jdk-21\\lib\\commons-codec-1.15\\commons-codec-1.15.jar"
+        "c:\\Program Files\\Java\\jdk-21\\lib\\commons-codec-1.15\\commons-codec-1.15.jar",
+        "c:\\Program Files\\Java\\jdk-21\\lib\\gson-2.6.2.jar"
     ]
 }

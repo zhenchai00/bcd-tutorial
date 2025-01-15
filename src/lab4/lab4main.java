@@ -1,6 +1,6 @@
 package lab4;
 
-public class lab3main {
+public class lab4main {
     public static void main(String[] args) {
         // first block called genesis block
         Block genesis = new Block("0");
