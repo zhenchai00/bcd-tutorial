@@ -24,6 +24,9 @@ public class Block implements Serializable {
 
     public void setTransactions(TransactionCollection transactions) {
         this.transactionCollection = transactions;
+        MerkleTree mt = MerkleTree.getInstance(transactions.getTransactionList());
+        mt.build();
+        header.setMerkleRoot(mt.getRoot());
     }
 
     public Header getHeader() {

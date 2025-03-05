@@ -10,6 +10,7 @@ public class Header implements Serializable {
     private int index;
     private String currentHash;
     private String previousHash;
+    private String merkleRoot;
     private long timestamp;
 
     public int getIndex() {
@@ -22,6 +23,10 @@ public class Header implements Serializable {
 
     public String getPreviousHash() {
         return previousHash;
+    }
+
+    public String getMerkleRoot() {
+        return merkleRoot;
     }
 
     public long getTimestamp() {
@@ -40,6 +45,10 @@ public class Header implements Serializable {
         this.previousHash = previousHash;
     }
 
+    public void setMerkleRoot(String merkleRoot) {
+        this.merkleRoot = merkleRoot;
+    }
+
     public void setTimestamp(long timestamp) {
         this.timestamp = timestamp;
     }
@@ -51,6 +60,7 @@ public class Header implements Serializable {
                 "\n\tindex=" + index +
                 ", \n\tcurrentHash='" + currentHash + '\'' +
                 ", \n\tpreviousHash='" + previousHash + '\'' +
+                ", \n\tmerkleRoot='" + merkleRoot + '\'' +
                 ", \n\ttimestamp=" + format.format(new Date(timestamp)) +
                 "\n }";
     }
